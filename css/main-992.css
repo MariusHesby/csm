@@ -1,0 +1,58 @@
+@media screen and (min-width: 992px) {
+  /* ----------
+   THE H1 WITH BACKGROUND
+---------- */
+
+  h1.home-bg,
+  h1.explore-bg,
+  h1.exhibition-bg,
+  h1.special-bg,
+  h1.visit-bg,
+  h1.get-bg,
+  h1.contact-bg {
+    min-height: 300px;
+    padding: 0 580px 0 0px;
+  }
+
+  /* ----------
+   THE LOGO
+---------- */
+
+  #logo-b {
+    display: none;
+  }
+  #logo-s {
+    display: none;
+  }
+  #logo-m {
+    display: block;
+    width: 300px;
+    margin-top: 10px;
+  }
+
+  /* ----------
+   THE HEADER
+---------- */
+
+  header {
+    grid-template-columns: 500px 1fr;
+  }
+
+  /* ----------
+   THE EXPLORE TOGETHER SECTION
+---------- */
+
+  #explore-together {
+    border-left: 5px solid var(--brown);
+    border-right: 5px solid var(--brown);
+  }
+
+  /* ----------
+   THE 1. SECTION: INFO
+---------- */
+
+  /* .box-border {
+    border-left: 5px solid var(--brown);
+    border-right: 5px solid var(--brown);
+  } */
+}

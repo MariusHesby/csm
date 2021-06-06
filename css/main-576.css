@@ -1,0 +1,9 @@
+@media screen and (min-width: 576px) {
+  /* ----------
+    THE LEFTOVERS
+ ---------- */
+
+  .img-size {
+    max-width: 400px;
+  }
+}

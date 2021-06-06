@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact us - Community Science Museum</title>
+    <!-- NB! -->
+    <meta name="description" content="Contact form and phone number. Contact us if you have any questions regarding anything in the universe" />
+    <!-- NB! -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" media="screen and (max-width: 374px)" href="css/main-320.css" />
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="css/main-576.css" />
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/main-768.css" />
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/main-992.css" />
+    <script defer src="js/bottomPart.js"></script>
+    <script defer src="js/contact.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="index.html">
+        <img src="img/svg/logo-b.svg" alt="go to main page" id="logo-b" />
+        <img src="img/svg/logo-m.svg" alt="go to main page" id="logo-m" />
+        <img src="img/svg/logo-s.svg" alt="go to main page" id="logo-s" />
+      </a>
+      <!-- Menu / The Burger  -->
+      <div>
+        <label for="hamburger-menu">
+          <img src="img/svg/bars.svg" alt="toggle menu" class="bars" />
+        </label>
+        <input type="checkbox" id="hamburger-menu" />
+        <nav>
+          <ul id="menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="explore.html">explore</a></li>
+            <li>
+              <a href="exhibition-spaces.html">exhibition<br />spaces</a>
+            </li>
+            <li>
+              <a href="special-events.html">special&nbsp;events<br />&&nbsp;exhibitions</a>
+            </li>
+            <li><a href="visit.html">visit</a></li>
+            <li>
+              <a href="get-involved.html">get&nbsp;involved</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HEADER END-->
+
+    <div class="container">
+      <!-- H1 -->
+      <h1 id="scroll" class="contact-bg">Contact us if you have any questions regarding anything in the universe</h1>
+
+      <!-- SECTION 1: INFO -->
+      <section id="content-relative">
+        <!-- box-border -->
+        <div class="box-border">
+          <!-- box 1 -->
+          <div class="box-fluent">
+            <h2>Who are you</h2>
+            <form id="contactForm">
+              <!-- action="contact-results.html" method="get" autocomplete="on" -->
+              <fieldset id="contact">
+                <legend>Send us a message</legend>
+                <div class="form-who">
+                  <div>
+                    <input type="radio" name="who" id="parent" />
+                    <label for="parent">Parent</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="who" id="kid" />
+                    <label for="kid">Kid</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="who" id="teacher" />
+                    <label for="teacher">Teacher</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="who" id="researcher" />
+                    <label for="researcher">Researcher</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="who" id="notsure" />
+                    <label for="notsure">Not sure</label>
+                  </div>
+                </div>
+                <!-- Name -->
+                <div class="form-name">
+                  <label for="name">Your full name (5 characters or more)</label>
+                  <input type="text" name="name" id="name" placeholder="Isaac Newton" required class="verifyName" />
+                  <div class="formError" id="nameError">Full name must be min 5 characters</div>
+                </div>
+
+                <!-- e-mail -->
+                <div class="form-email">
+                  <label for="email">Your e-mail</label>
+                  <input type="email" name="email" id="email" placeholder="isaac.newton@philosophia.com" required class="verifyEmail" />
+                  <div class="formError" id="emailError">Please enter a valid e-mail</div>
+                </div>
+
+                <!-- message -->
+                <div class="form-text">
+                  <label for="message">Message: (15 characters or more)</label>
+                  <textarea name="message" id="message" placeholder="Hi, I would like to know more about.." required class="verifyMessage"></textarea>
+                  <div class="formError" id="messageError">Message must be at least 15 characters long</div>
+                </div>
+
+                <!-- message sent -->
+                <div class="message"></div>
+
+                <button type="submit" value="Submit" class="cta-create">Submit</button>
+              </fieldset>
+            </form>
+            <p class="phone">+47 998 88 777</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="bottomPart">
+        <!-- js -->
+      </div>
+    </div>
+  </body>
+</html>

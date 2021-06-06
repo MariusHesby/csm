@@ -1,0 +1,15 @@
+@media screen and (max-width: 374px) {
+  .explore-together {
+    display: none;
+  }
+  .explore-togethers {
+    display: block;
+    height: 250px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+  #explore-together {
+    grid-template-columns: auto 135px;
+  }
+}
